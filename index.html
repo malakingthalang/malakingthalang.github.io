@@ -1,1 +1,696 @@
-HELLO WORLD!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mala 麻辣 | Authentic Sichuan Cuisine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-chinese">麻辣</span>
+                <span class="logo-text">MALA</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Authentic Sichuan Flavor</div>
+            <h1 class="hero-title">
+                <span class="chinese-large">麻辣香锅</span>
+                <span class="english">MALA RESTAURANT</span>
+            </h1>
+            <p class="hero-subtitle">Experience the bold, spicy, and numbing flavors of traditional Sichuan cuisine</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Reserve Table</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌶️</div>
+                    <h3>Authentic Spice</h3>
+                    <p>Imported Sichuan peppercorns and chili peppers for authentic mala flavor</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🍳</div>
+                    <h3>Master Chefs</h3>
+                    <p>Chefs trained in Chengdu with decades of Sichuan cooking experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥬</div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Daily sourced local produce combined with imported specialty items</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏮</div>
+                    <h3>Traditional Ambiance</h3>
+                    <p>Immersive dining experience with elegant Chinese decor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Offerings</span>
+                <h2 class="section-title">
+                    <span class="chinese">菜单</span>
+                    <span class="english">MENU</span>
+                </h2>
+                <p class="section-subtitle">Discover our carefully curated selection of Sichuan delicacies</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="signature">Signature</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="mala">Mala Specials</button>
+                <button class="filter-btn" data-category="noodles">Noodles & Rice</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Signature Dishes -->
+                <div class="menu-item" data-category="signature">
+                    <div class="menu-item-badge">Bestseller</div>
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍲</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">麻辣香锅</span>
+                                <span class="name-english">Mala Xiang Guo</span>
+                            </h3>
+                            <span class="menu-item-price">$24.99</span>
+                        </div>
+                        <p class="menu-item-description">Spicy stir-fried pot with your choice of ingredients in our signature mala sauce</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="3">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                            <span class="dietary vegetarian">V</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="signature">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🐟</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">水煮鱼</span>
+                                <span class="name-english">Shuizhu Yu</span>
+                            </h3>
+                            <span class="menu-item-price">$28.99</span>
+                        </div>
+                        <p class="menu-item-description">Tender fish fillets in fiery chili oil with bean sprouts and Sichuan peppercorns</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="4">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="signature">
+                    <div class="menu-item-badge">Chef's Choice</div>
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍗</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">宫保鸡丁</span>
+                                <span class="name-english">Kung Pao Chicken</span>
+                            </h3>
+                            <span class="menu-item-price">$18.99</span>
+                        </div>
+                        <p class="menu-item-description">Diced chicken with peanuts, vegetables, and chili peppers in tangy sauce</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="2">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🥟</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">红油抄手</span>
+                                <span class="name-english">Wontons in Chili Oil</span>
+                            </h3>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                        <p class="menu-item-description">Delicate pork wontons bathed in aromatic chili oil and sesame sauce</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="2">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🥒</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">拍黄瓜</span>
+                                <span class="name-english">Smashed Cucumber</span>
+                            </h3>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <p class="menu-item-description">Crisp cucumber with garlic, vinegar, and a hint of Sichuan pepper</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="1">
+                                <span class="pepper">🌶️</span>
+                            </span>
+                            <span class="dietary vegetarian">V</span>
+                            <span class="dietary vegan">VG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍄</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">夫妻肺片</span>
+                                <span class="name-english">Couple's Sliced Beef</span>
+                            </h3>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                        <p class="menu-item-description">Thinly sliced beef and offal in spicy chili oil with peanuts</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="3">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mala Specials -->
+                <div class="menu-item" data-category="mala">
+                    <div class="menu-item-badge">Extra Spicy</div>
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🦞</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">麻辣小龙虾</span>
+                                <span class="name-english">Mala Crawfish</span>
+                            </h3>
+                            <span class="menu-item-price">$32.99</span>
+                        </div>
+                        <p class="menu-item-description">Fresh crawfish simmered in intense mala broth with aromatics</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="5">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mala">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🥩</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">毛血旺</span>
+                                <span class="name-english">Mao Xue Wang</span>
+                            </h3>
+                            <span class="menu-item-price">$26.99</span>
+                        </div>
+                        <p class="menu-item-description">Duck blood curd and tripe in numbing spicy soup with bean sprouts</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="4">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mala">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍢</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">串串香</span>
+                                <span class="name-english">Chuan Chuan Xiang</span>
+                            </h3>
+                            <span class="menu-item-price">$19.99</span>
+                        </div>
+                        <p class="menu-item-description">Skewered ingredients cooked in boiling mala broth at your table</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="3">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noodles & Rice -->
+                <div class="menu-item" data-category="noodles">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍜</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">担担面</span>
+                                <span class="name-english">Dan Dan Noodles</span>
+                            </h3>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                        <p class="menu-item-description">Hand-pulled noodles with minced pork, preserved vegetables, and chili oil</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="3">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="noodles">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍚</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">麻婆豆腐饭</span>
+                                <span class="name-english">Mapo Tofu Rice Bowl</span>
+                            </h3>
+                            <span class="menu-item-price">$13.99</span>
+                        </div>
+                        <p class="menu-item-description">Silken tofu in spicy bean sauce over steamed jasmine rice</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="3">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                            <span class="dietary vegetarian">V</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="noodles">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🥟</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">钟水饺</span>
+                                <span class="name-english">Zhong Dumplings</span>
+                            </h3>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <p class="menu-item-description">Pork dumplings in sweet and spicy garlic soy sauce</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="2">
+                                <span class="pepper">🌶️</span>
+                                <span class="pepper">🌶️</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-badge">Cool Down</div>
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍧</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">冰粉</span>
+                                <span class="name-english">Ice Jelly</span>
+                            </h3>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <p class="menu-item-description">Refreshing hand-rubbed ice jelly with brown sugar syrup and toppings</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="0">
+                                <span class="pepper inactive">🌶️</span>
+                            </span>
+                            <span class="dietary vegetarian">V</span>
+                            <span class="dietary vegan">VG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🥣</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">红糖糍粑</span>
+                                <span class="name-english">Brown Sugar Rice Cake</span>
+                            </h3>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <p class="menu-item-description">Crispy fried glutinous rice cakes drizzled with warm brown sugar syrup</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="0">
+                                <span class="pepper inactive">🌶️</span>
+                            </span>
+                            <span class="dietary vegetarian">V</span>
+                            <span class="dietary vegan">VG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <div class="image-placeholder">🍵</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">
+                                <span class="name-chinese">桂花糕</span>
+                                <span class="name-english">Osmanthus Cake</span>
+                            </h3>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                        <p class="menu-item-description">Delicate steamed cake infused with fragrant osmanthus flowers</p>
+                        <div class="menu-item-meta">
+                            <span class="spice-level" data-level="0">
+                                <span class="pepper inactive">🌶️</span>
+                            </span>
+                            <span class="dietary vegetarian">V</span>
+                            <span class="dietary vegan">VG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-badge">Our Story</span>
+                    <h2 class="section-title">
+                        <span class="chinese">关于我们</span>
+                        <span class="english">ABOUT US</span>
+                    </h2>
+                    <p class="about-text">
+                        Founded in 2010, Mala Restaurant brings the authentic flavors of Sichuan province to your table. 
+                        Our name "Mala" (麻辣) represents the unique combination of spicy (辣) and numbing (麻) sensations 
+                        that define Sichuan cuisine.
+                    </p>
+                    <p class="about-text">
+                        Head Chef Wang, trained in Chengdu for over 20 years, leads our kitchen with passion and expertise. 
+                        We import our Sichuan peppercorns directly from Hanyuan County and use traditional cooking methods 
+                        passed down through generations.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Signature Dishes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder-large">🏮</div>
+                    </div>
+                    <div class="decorative-element"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Reviews</span>
+                <h2 class="section-title">
+                    <span class="chinese">顾客评价</span>
+                    <span class="english">TESTIMONIALS</span>
+                </h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The most authentic Sichuan food I've had outside of Chengdu! The mala xiang guo is absolutely incredible."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">L</div>
+                        <div class="author-info">
+                            <span class="author-name">Lisa Chen</span>
+                            <span class="author-title">Food Critic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Perfect balance of spice and flavor. The atmosphere transports you straight to Sichuan. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <span class="author-name">Michael Roberts</span>
+                            <span class="author-title">Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As a Sichuan native, I can confirm this is the real deal. Chef Wang's kung pao chicken reminds me of home."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">W</div>
+                        <div class="author-info">
+                            <span class="author-name">Wei Zhang</span>
+                            <span class="author-title">From Chengdu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2 class="section-title">
+                        <span class="chinese">联系我们</span>
+                        <span class="english">CONTACT US</span>
+                    </h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>123 Spice Street, Food District<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@malarestaurant.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Yelp">⭐</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5+">5+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Special requests or questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-chinese">麻辣</span>
+                        <span class="logo-text">MALA</span>
+                    </a>
+                    <p>Authentic Sichuan cuisine experience</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Dine-in</a></li>
+                            <li><a href="#">Takeout</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mala Restaurant. All rights reserved.</p>
+                <p>Made with ❤️ and 🌶️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
